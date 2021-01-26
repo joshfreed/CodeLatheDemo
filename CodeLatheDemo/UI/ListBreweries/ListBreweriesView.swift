@@ -10,26 +10,22 @@ import SwiftUI
 struct ListBreweriesView: View {
     @ObservedObject var vm: ListBreweriesViewModel
     
-    var body: some View {
-        NavigationView {
-            Group {
-                if vm.isLoading {
-                    ProgressView { Text("Loading...") }
-                } else if vm.isLoadingError {
-                    ListBreweriesErrorView { vm.listBreweries() }
-                } else {
-                    List(vm.breweries) { brewery in
-                        BreweryListItemView(name: brewery.name, street: brewery.street)
-                            .padding([.top, .bottom], 4)
-                    }
+    var body: some View {        
+        Group {
+            if vm.isLoading {
+                ProgressView { Text("Loading...") }
+            } else if vm.isLoadingError {
+                ListBreweriesErrorView { vm.listBreweries() }
+            } else {
+                List(vm.breweries) { brewery in
+                    BreweryListItemView(name: brewery.name, street: brewery.street)
+                        .padding([.top, .bottom], 4)
                 }
             }
-            .navigationBarTitle("Breweries")
-            .navigationBarItems(trailing: Button("Virtual CV") { })
-            .listStyle(PlainListStyle())
-            .onAppear {
-                vm.listBreweries()
-            }
+        }                
+        .listStyle(PlainListStyle())
+        .onAppear {
+            vm.listBreweries()
         }
     }
 }

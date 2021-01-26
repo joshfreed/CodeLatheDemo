@@ -1,13 +1,13 @@
 //
-//  CodeLatheDemoUITests.swift
+//  VirtualCVUITests.swift
 //  CodeLatheDemoUITests
 //
-//  Created by Josh Freed on 1/21/21.
+//  Created by Josh Freed on 1/25/21.
 //
 
 import XCTest
 
-class CodeLatheDemoUITests: XCTestCase {
+class VirtualCVUITests: XCTestCase {
     var app: XCUIApplication!
     
     override func setUpWithError() throws {
@@ -25,13 +25,12 @@ class CodeLatheDemoUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testFirstScreenListsBreweries() throws {
-        XCTAssertTrue(app.navigationBars["Breweries"].exists)
+    func test_NavigatesToVirtualCVPage() throws {
+        app.buttons["Virtual CV"].tap()
         
-        XCTAssertTrue(app.tables.staticTexts["Dock Street Brewery"].exists)
-        XCTAssertTrue(app.tables.staticTexts["701 S 50th St Fl 1"].exists)
+        _ = app.staticTexts["John Doe's Virtual CV"].waitForExistence(timeout: 3)
         
-        XCTAssertTrue(app.tables.staticTexts["Evil Genius Beer Co"].exists)
-        XCTAssertTrue(app.tables.staticTexts["1727 N Front St"].exists)
+        XCTAssertTrue(app.staticTexts["John Doe's Virtual CV"].exists)
     }
+
 }

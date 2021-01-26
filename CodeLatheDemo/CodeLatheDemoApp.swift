@@ -13,10 +13,30 @@ import SwiftUI
 struct CodeLatheDemoApp: App {
     @StateObject var listBreweriesViewModel = ListBreweriesViewModel(breweryService: Services.shared.breweryService)
     
+    let cv = VirtualCV(
+        name: "John Doe",
+        email: "john@doe.com",
+        phone: "555-123-4567",
+        skills: ["HTML", "CSS", "JavaScript", "Git", "Photoshop"]
+    )
+    
     var body: some Scene {
         WindowGroup {
-            ListBreweriesView(vm: listBreweriesViewModel)
+            NavigationView {
+                ListBreweriesView(vm: listBreweriesViewModel)
+                    .navigationBarTitle("Breweries")
+                    .navigationBarItems(trailing: NavigationLink(destination: virtualCVView()) {
+                        Text("Virtual CV")
+                    })
+            }
         }
+    }
+    
+    private func virtualCVView() -> some View {
+        VirtualCVView(cv: cv)
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
     }
 }
 
