@@ -16,7 +16,7 @@ struct TagListView<Content: View>: View {
     /// Function that builds a view for a single tag.
     var tagViewBuilder: (String) -> Content
     
-    @State private var totalHeight = CGFloat.infinity
+    @State private var totalHeight = CGFloat.zero
 
     var body: some View {
         VStack {
@@ -24,7 +24,7 @@ struct TagListView<Content: View>: View {
                 self.generateContent(in: geometry)
             }
         }
-        .frame(minHeight: 0, maxHeight: totalHeight)
+        .frame(height: totalHeight)
     }
     
     private func generateContent(in g: GeometryProxy) -> some View {

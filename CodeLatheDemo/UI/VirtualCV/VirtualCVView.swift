@@ -11,13 +11,18 @@ struct VirtualCVView: View {
     let cv: VirtualCV
     
     var body: some View {
-        VStack(spacing: 18) {
+        VStack(spacing: 0) {
             CVHeaderView(name: cv.name)
-            MyInfoView(name: cv.name, email: cv.email, phone: cv.phone)
-            MySkillsView(skills: cv.skills)
-            MyBioView(bio: cv.bio)
-            GalleryView()
-            Spacer()
+            ScrollView {
+                VStack(spacing: 18) {
+                    MyInfoView(name: cv.name, email: cv.email, phone: cv.phone)
+                    MySkillsView(skills: cv.skills)
+                    MyBioView(bio: cv.bio)
+                    GalleryView()
+                    Spacer()
+                }
+                .padding(.top, 18)
+            }
         }
     }
 }
