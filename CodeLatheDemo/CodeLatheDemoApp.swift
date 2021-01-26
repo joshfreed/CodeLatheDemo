@@ -25,7 +25,7 @@ struct CodeLatheDemoApp: App {
         WindowGroup {
             NavigationView {
                 ListBreweriesView(vm: listBreweriesViewModel)
-                    .navigationBarTitle("Breweries")
+                    .navigationBarTitle("Philly Breweries")
                     .navigationBarItems(trailing: NavigationLink(destination: virtualCVView()) {
                         Text("Virtual CV")
                     })

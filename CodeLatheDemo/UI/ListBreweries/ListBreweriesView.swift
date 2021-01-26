@@ -18,8 +18,8 @@ struct ListBreweriesView: View {
                 ListBreweriesErrorView { vm.listBreweries() }
             } else {
                 List(vm.breweries) { brewery in
-                    BreweryListItemView(name: brewery.name, street: brewery.street)
-                        .padding([.top, .bottom], 4)
+                    BreweryListItemView(name: brewery.name, street: brewery.street, type: brewery.type)
+                        .padding([.top, .bottom], 8)
                 }
             }
         }                

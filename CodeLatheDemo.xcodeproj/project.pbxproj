@@ -16,6 +16,7 @@
 		5347569025C06CA9006F09CA /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5347568F25C06CA9006F09CA /* GalleryView.swift */; };
 		5347569525C06CED006F09CA /* GalleryImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5347569425C06CED006F09CA /* GalleryImageView.swift */; };
 		5347569B25C07335006F09CA /* CVSectionTitleViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5347569A25C07335006F09CA /* CVSectionTitleViewModifier.swift */; };
+		534756AB25C07D43006F09CA /* BreweryImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534756AA25C07D43006F09CA /* BreweryImageView.swift */; };
 		534D234425B9E7810079630A /* CodeLatheDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534D234325B9E7810079630A /* CodeLatheDemoApp.swift */; };
 		534D234825B9E7810079630A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534D234725B9E7810079630A /* Assets.xcassets */; };
 		534D234B25B9E7810079630A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534D234A25B9E7810079630A /* Preview Assets.xcassets */; };
@@ -64,6 +65,7 @@
 		5347568F25C06CA9006F09CA /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		5347569425C06CED006F09CA /* GalleryImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryImageView.swift; sourceTree = "<group>"; };
 		5347569A25C07335006F09CA /* CVSectionTitleViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSectionTitleViewModifier.swift; sourceTree = "<group>"; };
+		534756AA25C07D43006F09CA /* BreweryImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryImageView.swift; sourceTree = "<group>"; };
 		534D234025B9E7810079630A /* CodeLatheDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeLatheDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		534D234325B9E7810079630A /* CodeLatheDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeLatheDemoApp.swift; sourceTree = "<group>"; };
 		534D234725B9E7810079630A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 				53A631DC25B9FFC9009577CB /* ListBreweriesViewModel.swift */,
 				53A631D125B9FF08009577CB /* ListBreweriesView.swift */,
 				53A631E125BA0243009577CB /* BreweryListItemView.swift */,
+				534756AA25C07D43006F09CA /* BreweryImageView.swift */,
 			);
 			path = ListBreweries;
 			sourceTree = "<group>";
@@ -489,6 +492,7 @@
 				53B88FFD25BF147500845EBA /* VirtualCVView.swift in Sources */,
 				536E76D925BF2CC50081B603 /* CVHeaderView.swift in Sources */,
 				5347569525C06CED006F09CA /* GalleryImageView.swift in Sources */,
+				534756AB25C07D43006F09CA /* BreweryImageView.swift in Sources */,
 				53A631EE25BA25FD009577CB /* BreweryService.swift in Sources */,
 				536E76DE25BF2CE40081B603 /* ContactInfoLabelStyle.swift in Sources */,
 			);

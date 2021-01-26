@@ -38,8 +38,8 @@ class ListBreweriesViewModelTests: XCTestCase {
         let isLoadingRecorder = sut.$isLoading.record(numberOfRecords: 2)
         let breweriesRecorder = sut.$breweries.record(numberOfRecords: 1)
         let breweries: [Brewery] = [
-            .init(id: 1, name: "Cool Brews", street: "123 Fake Street"),
-            .init(id: 2, name: "IPAs All Day", street: "555 Main Street Road")
+            .init(id: 1, name: "Cool Brews", street: "123 Fake Street", type: .brewpub),
+            .init(id: 2, name: "IPAs All Day", street: "555 Main Street Road", type: .micro)
         ]
         breweryService.listBreweriesByResponse = .success(breweries)
 

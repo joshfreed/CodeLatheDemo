@@ -12,8 +12,8 @@ import Combine
 class FakeBreweryService: BreweryService {
     
     var listBreweriesByResponse: Result<[Brewery], Error>? = .success([
-        .init(id: 1, name: "Dock Street Brewery", street: "701 S 50th St Fl 1"),
-        .init(id: 2, name: "Evil Genius Beer Co", street: "1727 N Front St")
+        .init(id: 1, name: "Dock Street Brewery", street: "701 S 50th St Fl 1", type: .nano),
+        .init(id: 2, name: "Evil Genius Beer Co", street: "1727 N Front St", type: .micro)
     ])
     
     var argCity: String = ""

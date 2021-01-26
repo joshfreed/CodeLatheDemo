@@ -11,4 +11,9 @@ struct Brewery: Identifiable, Equatable {
     let id: Int
     let name: String
     let street: String
+    let type: BreweryType
+}
+
+enum BreweryType: String {
+    case nano, micro, brewpub, regional
 }

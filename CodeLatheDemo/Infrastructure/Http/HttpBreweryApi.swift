@@ -20,7 +20,7 @@ class HttpBreweryApi: BreweryService {
             .map(\.data)
             .decode(type: [HttpBreweryApi.BreweryDto].self, decoder: JSONDecoder())
             .map { $0.filter { $0.brewery_type != "planning" } }
-            .map { $0.map { $0.toModel() } }
+            .map { $0.compactMap { $0.toModel() } }
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
@@ -40,8 +40,11 @@ extension HttpBreweryApi {
         let brewery_type: String
         
         /// Converts this API object to an instance of our domain model.
-        func toModel() -> Brewery {
-            Brewery(id: id, name: name, street: street)
+        func toModel() -> Brewery? {
+            guard let type = BreweryType(rawValue: brewery_type) else {
+                return nil
+            }
+            return Brewery(id: id, name: name, street: street, type: type)
         }
     }
     
