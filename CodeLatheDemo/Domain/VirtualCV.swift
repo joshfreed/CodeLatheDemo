@@ -12,4 +12,5 @@ struct VirtualCV {
     let email: String
     let phone: String
     let skills: [String]
+    let bio: String
 }

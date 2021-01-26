@@ -17,7 +17,8 @@ struct CodeLatheDemoApp: App {
         name: "John Doe",
         email: "john@doe.com",
         phone: "555-123-4567",
-        skills: ["HTML", "CSS", "JavaScript", "Git", "Photoshop"]
+        skills: ["HTML", "CSS", "JavaScript", "Git", "Photoshop"],
+        bio: "\"John Doe\" and \"Jane Doe\" (for females) are multiple-use names that are used when the true name of a person is unknown or is being intentionally concealed. In the context of law enforcement in the United States, such names are often used to refer to a corpse whose identity is unknown or unconfirmed. Secondly, such names are also often used to refer to a hypothetical \"everyman\" in other contexts, in a manner similar to \"John Q. Public\" or \"Joe Public\". There are many variants to the above names, including \"John Roe\", \"Richard Roe\", \"Jane Roe\" and \"Baby Doe\", \"Janie Doe\" or \"Johnny Doe\" (for children)."
     )
     
     var body: some Scene {

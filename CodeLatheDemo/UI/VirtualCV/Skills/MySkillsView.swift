@@ -11,10 +11,9 @@ struct MySkillsView: View {
     let skills: [String]
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 16) {
             Text("Skills")
-                .font(.custom("Inter-SemiBold", size: 14))
-                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                .cvSectionTitle()
             
             TagListView(tags: skills) {
                 SkillView(skill: $0)

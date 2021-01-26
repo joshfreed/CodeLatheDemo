@@ -12,6 +12,10 @@
 		5347560B25BB2F8500EFDF3E /* FakeBreweryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5347560A25BB2F8500EFDF3E /* FakeBreweryService.swift */; };
 		5347561425BB2FB900EFDF3E /* HttpBreweryApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5347561325BB2FB900EFDF3E /* HttpBreweryApi.swift */; };
 		5347562125BB30EE00EFDF3E /* ListBreweriesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5347562025BB30EE00EFDF3E /* ListBreweriesViewModelTests.swift */; };
+		5347568325C06635006F09CA /* MyBioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5347568225C06635006F09CA /* MyBioView.swift */; };
+		5347569025C06CA9006F09CA /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5347568F25C06CA9006F09CA /* GalleryView.swift */; };
+		5347569525C06CED006F09CA /* GalleryImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5347569425C06CED006F09CA /* GalleryImageView.swift */; };
+		5347569B25C07335006F09CA /* CVSectionTitleViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5347569A25C07335006F09CA /* CVSectionTitleViewModifier.swift */; };
 		534D234425B9E7810079630A /* CodeLatheDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534D234325B9E7810079630A /* CodeLatheDemoApp.swift */; };
 		534D234825B9E7810079630A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534D234725B9E7810079630A /* Assets.xcassets */; };
 		534D234B25B9E7810079630A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534D234A25B9E7810079630A /* Preview Assets.xcassets */; };
@@ -56,6 +60,10 @@
 		5347560A25BB2F8500EFDF3E /* FakeBreweryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeBreweryService.swift; sourceTree = "<group>"; };
 		5347561325BB2FB900EFDF3E /* HttpBreweryApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpBreweryApi.swift; sourceTree = "<group>"; };
 		5347562025BB30EE00EFDF3E /* ListBreweriesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBreweriesViewModelTests.swift; sourceTree = "<group>"; };
+		5347568225C06635006F09CA /* MyBioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBioView.swift; sourceTree = "<group>"; };
+		5347568F25C06CA9006F09CA /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		5347569425C06CED006F09CA /* GalleryImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryImageView.swift; sourceTree = "<group>"; };
+		5347569A25C07335006F09CA /* CVSectionTitleViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSectionTitleViewModifier.swift; sourceTree = "<group>"; };
 		534D234025B9E7810079630A /* CodeLatheDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeLatheDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		534D234325B9E7810079630A /* CodeLatheDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeLatheDemoApp.swift; sourceTree = "<group>"; };
 		534D234725B9E7810079630A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -155,6 +163,32 @@
 				5347562025BB30EE00EFDF3E /* ListBreweriesViewModelTests.swift */,
 			);
 			path = ListBreweries;
+			sourceTree = "<group>";
+		};
+		5347568725C06644006F09CA /* My Info */ = {
+			isa = PBXGroup;
+			children = (
+				536E76D325BF2C9A0081B603 /* MyInfoView.swift */,
+				536E76DD25BF2CE40081B603 /* ContactInfoLabelStyle.swift */,
+			);
+			path = "My Info";
+			sourceTree = "<group>";
+		};
+		5347568E25C06C95006F09CA /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				5347568F25C06CA9006F09CA /* GalleryView.swift */,
+				5347569425C06CED006F09CA /* GalleryImageView.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		5347569925C07323006F09CA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5347569A25C07335006F09CA /* CVSectionTitleViewModifier.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		534D233725B9E7800079630A = {
@@ -278,11 +312,13 @@
 		53B88FFB25BF145000845EBA /* VirtualCV */ = {
 			isa = PBXGroup;
 			children = (
+				5347568725C06644006F09CA /* My Info */,
 				536E76E825BF30830081B603 /* Skills */,
+				5347568E25C06C95006F09CA /* Gallery */,
+				5347569925C07323006F09CA /* Helpers */,
 				53B88FFC25BF147500845EBA /* VirtualCVView.swift */,
-				536E76D325BF2C9A0081B603 /* MyInfoView.swift */,
 				536E76D825BF2CC50081B603 /* CVHeaderView.swift */,
-				536E76DD25BF2CE40081B603 /* ContactInfoLabelStyle.swift */,
+				5347568225C06635006F09CA /* MyBioView.swift */,
 			);
 			path = VirtualCV;
 			sourceTree = "<group>";
@@ -436,11 +472,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				53142DC925BB34AE004EDCFF /* Brewery.swift in Sources */,
+				5347568325C06635006F09CA /* MyBioView.swift in Sources */,
 				53A631D225B9FF08009577CB /* ListBreweriesView.swift in Sources */,
 				536E76EA25BF308D0081B603 /* MySkillsView.swift in Sources */,
 				536E76D425BF2C9A0081B603 /* MyInfoView.swift in Sources */,
 				536E76F225BF31590081B603 /* SkillView.swift in Sources */,
+				5347569B25C07335006F09CA /* CVSectionTitleViewModifier.swift in Sources */,
 				5347561425BB2FB900EFDF3E /* HttpBreweryApi.swift in Sources */,
+				5347569025C06CA9006F09CA /* GalleryView.swift in Sources */,
 				53A631DD25B9FFC9009577CB /* ListBreweriesViewModel.swift in Sources */,
 				5347560B25BB2F8500EFDF3E /* FakeBreweryService.swift in Sources */,
 				53A631E225BA0243009577CB /* BreweryListItemView.swift in Sources */,
@@ -449,6 +488,7 @@
 				536E4DCF25C05EB400198835 /* TagListView.swift in Sources */,
 				53B88FFD25BF147500845EBA /* VirtualCVView.swift in Sources */,
 				536E76D925BF2CC50081B603 /* CVHeaderView.swift in Sources */,
+				5347569525C06CED006F09CA /* GalleryImageView.swift in Sources */,
 				53A631EE25BA25FD009577CB /* BreweryService.swift in Sources */,
 				536E76DE25BF2CE40081B603 /* ContactInfoLabelStyle.swift in Sources */,
 			);
